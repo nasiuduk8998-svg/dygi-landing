@@ -1,31 +1,152 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DYGI SYSTEM</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daftar - DYGI SYSTEM</title>
+  <meta name="description" content="Daftar akun baru di DYGI SYSTEM." />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
 
-<header class="navbar">
-  <div class="logo">DYGI SYSTEM</div>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/">Features</a>
-    <a href="/">Support</a>
-  </nav>
-</header>
+  <div class="page-shell auth-shell">
+    <header class="navbar">
+      <a href="/" class="brand">
+        <div class="brand-logo">D</div>
+        <div class="brand-text">
+          <span class="brand-top">DYGI</span>
+          <span class="brand-bottom">SYSTEM</span>
+        </div>
+      </a>
 
-<main class="hero">
-  <h1>Premium Gateway DYGI SYSTEM</h1>
-  <p>Sistem otomatis untuk mengelola layanan digital dalam satu platform.</p>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/">Features</a>
+        <a href="/">Security</a>
+        <a href="/">Support</a>
+      </nav>
 
-  <div class="buttons">
-    <a href="/login" class="btn-outline">Login</a>
-    <a href="/register" class="btn-solid">Daftar</a>
+      <div class="nav-actions">
+        <a href="/login" class="btn btn-ghost">Login</a>
+        <a href="/register" class="btn btn-primary">Daftar</a>
+      </div>
+    </header>
+
+    <main class="auth-layout">
+      <section class="auth-info">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          New account onboarding
+        </div>
+
+        <h1>
+          Buat akun baru di
+          <span class="gradient-text">DYGI SYSTEM</span>
+        </h1>
+
+        <p class="hero-desc">
+          Halaman daftar yang dibuat rapi dan premium untuk kasih first impression
+          yang kuat. Fokusnya satu: bikin user daftar dengan cepat tanpa bingung.
+        </p>
+
+        <div class="stats auth-stats">
+          <a href="/" class="stat-card">
+            <strong>Simple</strong>
+            <span>Fast Registration</span>
+          </a>
+          <a href="/" class="stat-card">
+            <strong>Secure</strong>
+            <span>Protected Data</span>
+          </a>
+          <a href="/" class="stat-card">
+            <strong>Ready</strong>
+            <span>Instant Access Flow</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="auth-card-wrap">
+        <div class="glass-card auth-card">
+          <div class="window-top">
+            <div class="window-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <a href="/" class="window-link">register.dygistore.net</a>
+          </div>
+
+          <div class="card-body">
+            <div class="mini-label">Create Account</div>
+            <h2>Get started</h2>
+            <p class="auth-subtext">
+              Daftar akun baru untuk mulai masuk ke ekosistem sistem lu.
+            </p>
+
+            <form class="auth-form" action="#" method="post">
+              <div class="form-group">
+                <label for="fullname">Nama Lengkap</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Masukkan nama lengkap" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email aktif" />
+              </div>
+
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Buat username" />
+              </div>
+
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Buat password" />
+              </div>
+
+              <div class="form-group">
+                <label for="confirm_password">Konfirmasi Password</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Ulangi password" />
+              </div>
+
+              <label class="checkbox-wrap checkbox-block">
+                <input type="checkbox" />
+                <span>Saya setuju dengan syarat dan ketentuan yang berlaku.</span>
+              </label>
+
+              <button type="submit" class="btn btn-primary full btn-large">
+                Daftar Sekarang
+              </button>
+            </form>
+
+            <div class="auth-divider">
+              <span>atau</span>
+            </div>
+
+            <a href="/login" class="btn btn-secondary full btn-large">
+              Sudah punya akun? Login
+            </a>
+
+            <p class="auth-bottom-text">
+              Sudah terdaftar?
+              <a href="/login" class="auth-link strong-link">Masuk di sini</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>© 2026 DYGI SYSTEM. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="/">Privacy</a>
+        <a href="/">Terms</a>
+        <a href="/">Support</a>
+      </div>
+    </footer>
   </div>
-</main>
-
 </body>
 </html>

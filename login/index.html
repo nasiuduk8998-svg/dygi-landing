@@ -1,31 +1,141 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DYGI SYSTEM</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - DYGI SYSTEM</title>
+  <meta name="description" content="Login ke DYGI SYSTEM." />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
 
-<header class="navbar">
-  <div class="logo">DYGI SYSTEM</div>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/">Features</a>
-    <a href="/">Support</a>
-  </nav>
-</header>
+  <div class="page-shell auth-shell">
+    <header class="navbar">
+      <a href="/" class="brand">
+        <div class="brand-logo">D</div>
+        <div class="brand-text">
+          <span class="brand-top">DYGI</span>
+          <span class="brand-bottom">SYSTEM</span>
+        </div>
+      </a>
 
-<main class="hero">
-  <h1>Premium Gateway DYGI SYSTEM</h1>
-  <p>Sistem otomatis untuk mengelola layanan digital dalam satu platform.</p>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/">Features</a>
+        <a href="/">Security</a>
+        <a href="/">Support</a>
+      </nav>
 
-  <div class="buttons">
-    <a href="/login" class="btn-outline">Login</a>
-    <a href="/register" class="btn-solid">Daftar</a>
+      <div class="nav-actions">
+        <a href="/login" class="btn btn-ghost">Login</a>
+        <a href="/register" class="btn btn-primary">Daftar</a>
+      </div>
+    </header>
+
+    <main class="auth-layout">
+      <section class="auth-info">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Secure member access
+        </div>
+
+        <h1>
+          Masuk ke
+          <span class="gradient-text">workspace DYGI SYSTEM</span>
+        </h1>
+
+        <p class="hero-desc">
+          Akses akun lu dengan tampilan yang bersih, cepat, dan profesional.
+          Halaman ini dibuat fokus supaya user langsung masuk ke sistem tanpa
+          muter-muter nggak jelas.
+        </p>
+
+        <div class="stats auth-stats">
+          <a href="/" class="stat-card">
+            <strong>Secure</strong>
+            <span>Protected Login</span>
+          </a>
+          <a href="/" class="stat-card">
+            <strong>Fast</strong>
+            <span>Quick Access</span>
+          </a>
+          <a href="/" class="stat-card">
+            <strong>24/7</strong>
+            <span>System Ready</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="auth-card-wrap">
+        <div class="glass-card auth-card">
+          <div class="window-top">
+            <div class="window-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <a href="/" class="window-link">login.dygistore.net</a>
+          </div>
+
+          <div class="card-body">
+            <div class="mini-label">Member Login</div>
+            <h2>Welcome back</h2>
+            <p class="auth-subtext">
+              Masuk untuk melanjutkan akses ke dashboard dan layanan sistem.
+            </p>
+
+            <form class="auth-form" action="#" method="post">
+              <div class="form-group">
+                <label for="email">Email / Username</label>
+                <input type="text" id="email" name="email" placeholder="Masukkan email atau username" />
+              </div>
+
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Masukkan password" />
+              </div>
+
+              <div class="form-row">
+                <label class="checkbox-wrap">
+                  <input type="checkbox" />
+                  <span>Ingat saya</span>
+                </label>
+                <a href="/" class="auth-link">Lupa password?</a>
+              </div>
+
+              <button type="submit" class="btn btn-primary full btn-large">
+                Login
+              </button>
+            </form>
+
+            <div class="auth-divider">
+              <span>atau</span>
+            </div>
+
+            <a href="/register" class="btn btn-secondary full btn-large">
+              Buat akun baru
+            </a>
+
+            <p class="auth-bottom-text">
+              Belum punya akun?
+              <a href="/register" class="auth-link strong-link">Daftar sekarang</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>© 2026 DYGI SYSTEM. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="/">Privacy</a>
+        <a href="/">Terms</a>
+        <a href="/">Support</a>
+      </div>
+    </footer>
   </div>
-</main>
-
 </body>
 </html>
