@@ -8,50 +8,99 @@
 </head>
 
 <body>
-  <div class="page-shell">
-    <header class="navbar">
-      <div class="brand">
-        <div class="brand-logo">D</div>
-        <div class="brand-text">
-          <span>DYGI</span>
-          <span>SYSTEM</span>
-        </div>
-      </div>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">DYGI</div>
 
-      <nav class="nav-links">
-        <a href="/">Home</a>
-        <a href="/">Features</a>
-        <a href="/">Security</a>
-        <a href="/">Support</a>
-      </nav>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">FAQ</a>
+      <a href="#">Support</a>
+    </nav>
 
-      <div class="nav-actions">
-        <a href="https://mez.ink/miminbet88" class="btn btn-ghost">Login</a>
-        <a href="https://mez.ink/miminbet88" class="btn btn-primary">Daftar</a>
-      </div>
-    </header>
+    <div class="nav-btn">
+      <a href="https://mez.ink/miminbet88" class="btn ghost">Login</a>
+      <a href="https://mez.ink/miminbet88" class="btn primary">Daftar</a>
+    </div>
+  </header>
 
-    <main class="hero">
-      <h1>Satu pintu masuk premium untuk system lu</h1>
-
-      <p class="hero-desc">
-        Semua akses dibuat simpel dan cepat. Fokus hanya ke aksi utama:
-        login atau daftar.
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Akses Cepat & Aman<br><span>Tanpa Ribet</span></h1>
+      <p>
+        Semua proses dibuat simpel. Tinggal klik, langsung masuk.
+        Tidak perlu langkah panjang.
       </p>
 
-      <div class="hero-actions">
-        <a href="https://mez.ink/miminbet88" class="btn btn-primary btn-large">
-          Daftar Sekarang
-        </a>
-        <a href="https://mez.ink/miminbet88" class="btn btn-secondary btn-large">
-          Login
-        </a>
+      <div class="hero-cta">
+        <a href="https://mez.ink/miminbet88" class="btn primary large">Daftar Sekarang</a>
+        <a href="https://mez.ink/miminbet88" class="btn ghost large">Login</a>
       </div>
-    </main>
+    </div>
 
-    <footer class="footer">
-      <div>© 2026 DYGI SYSTEM</div>
-    </footer>
-  </div>
+    <div class="hero-img">
+      <img src="/assets/hero.png" alt="preview" />
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>Pertanyaan Umum</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">Bagaimana cara mulai?</button>
+      <div class="faq-answer">
+        Cukup klik tombol daftar, lalu ikuti instruksi yang tersedia.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Apakah prosesnya cepat?</button>
+      <div class="faq-answer">
+        Ya, semua proses dibuat instan dan tanpa ribet.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Apakah aman digunakan?</button>
+      <div class="faq-answer">
+        Sistem dirancang dengan keamanan tinggi dan proteksi data.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Kenapa harus lewat halaman ini?</button>
+      <div class="faq-answer">
+        Ini adalah gateway resmi untuk memastikan akses aman dan valid.
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BOTTOM -->
+  <section class="bottom-cta">
+    <h2>Mulai Sekarang</h2>
+    <p>Langsung akses tanpa ribet</p>
+
+    <div class="hero-cta">
+      <a href="https://mez.ink/miminbet88" class="btn primary large">Daftar</a>
+      <a href="https://mez.ink/miminbet88" class="btn ghost large">Login</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    © 2026 DYGI SYSTEM
+  </footer>
+
+  <!-- SCRIPT FAQ -->
+  <script>
+    document.querySelectorAll(".faq-question").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const item = btn.parentElement;
+        item.classList.toggle("active");
+      });
+    });
+  </script>
 </body>
 </html>
